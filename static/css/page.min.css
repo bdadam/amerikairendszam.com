@@ -1,1 +1,250 @@
-body,div,span,p,ul,li,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}textarea{resize:none;}a:link,a:visited,a:hover,a:active{color:#00e;text-decoration:none;}a:hover,a:active{text-decoration:underline;}li{list-style:none;list-style-type:none;list-style-position:inside;}h1{font-size:1.8em;text-align:center;margin:18px auto 38px auto;padding:0 18px;}h2{font-size:1.3em;text-align:center;margin-bottom:1em;}body{background-color:#333;font-family:Garamond,serif;font-size:12pt;color:#333;}#header{position:relative;text-align:center;}#logo{margin:12px auto auto auto;text-align:center;width:471px;height:183px;}#topcontacts{position:absolute;top:18px;right:18px;text-align:right;}.phone{color:#c00;font-weight:bold;font-size:1.3em;}.myname{font-weight:bold;font-size:1.1em;}#container{width:900px;margin:0 auto;position:relative;}.white-border{width:100%;-moz-border-radius:12px;-webkit-border-radius:12px;border-radius:12px;margin:20px auto 0 auto;background-color:#fff;position:relative;padding:6px;}.white-border-inner{background-color:#EFFFBF;-moz-border-radius:12px;-webkit-border-radius:12px;border-radius:12px;width:100%;position:relative;}#content-container-right{float:right;width:65%;border-left:1px solid #999;}#content-right{margin:0 18px 0 24px;}#content-container-left{width:34%;float:right;}#content-left{margin:0 24px 0 18px;}#content-left li{margin:0 0 12px 0;}.answer{margin-bottom:.7em;}.horiz-separator{width:50%;margin:18px auto 8px auto;border-top:1px solid #fff;}#contact{clear:both;position:relative;}#contact_form{width:600px;margin:0 auto;}#contact_form fieldset{position:relative;width:100%;margin:0;padding:0;border:none;}#contact_form label{width:200px;display:inline-block;padding:4px 4px 4px 0;text-align:right;}#contact_form input[type=text]{width:388px;margin:4px 0 4px 0;padding:4px 0;right:0;}#contact_form input[type=submit]{width:250px;margin:8px auto 8px auto;text-align:center;left:200px;position:relative;color:#ff4200;}#contact_form textarea{width:384px;height:100px;padding:2px;}.contact-hint{font-size:.8em;width:400px;margin:8px 0 0 auto;display:block;}#footer{position:relative;margin:20px auto 8px auto;text-align:center;}#footer ul{width:100%;margin:8px 0 8px 0;}#footer li{display:inline;list-style:none;list-style-type:none;list-style-position:inside;padding:0 20px 0 20px;}#footer a{text-decoration:none!important;}.bdadam{color:#f00;text-decoration:underline;}.webdev{color:#666;text-decoration:none;}
+
+html {
+    box-sizing: border-box;
+}
+
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+
+body,
+div,
+span,
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #00e;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+h1 {
+    font-size: 1.8em;
+    text-align: center;
+    margin: 18px auto 38px auto;
+    padding: 0 18px;
+}
+
+h2 {
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+body {
+    background-color: #333;
+    color: #333;
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+
+#header {
+    position: relative;
+    text-align: center;
+}
+
+#logo {
+    margin: 12px auto auto auto;
+    text-align: center;
+    max-width: 471px;
+    width: 100%;
+    /* height: 183px; */
+}
+
+@media (min-width: 1000px) {
+    #topcontacts {
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        text-align: right;
+    }
+}
+
+.phone {
+    color: #c00;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.myname {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.white-border {
+    background-color: #fff;
+}
+
+@media (min-width: 1000px) {
+    .white-border {
+        border-radius: 12px;
+        margin: 20px auto 0 auto;
+        position: relative;
+        padding: 6px;
+    }
+
+    .white-border-inner {
+        background-color: #EFFFBF;
+        border-radius: 12px;
+        width: 100%;
+        position: relative;
+    }
+}
+
+.white-border-inner {
+    background-color: #EFFFBF;
+}
+
+@media (min-width: 1000px) {
+    #content-container-right {
+        float: right;
+        width: 65%;
+        border-left: 1px solid #999;
+    }
+}
+
+#content-right {
+    margin: 0 18px 0 24px;
+}
+
+@media (min-width: 1000px) {
+    #content-container-left {
+        width: 34%;
+        float: right;
+    }
+}
+#content-left {
+    margin: 0 24px 0 18px;
+}
+
+#content-left li {
+    margin: 0 0 12px 0;
+}
+
+.answer {
+    margin-bottom: .7em;
+}
+
+.horiz-separator {
+    width: 50%;
+    margin: 18px auto 8px auto;
+    border-top: 1px solid #fff;
+}
+
+#contact {
+    clear: both;
+    position: relative;
+}
+
+#contact_form {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#contact_form fieldset {
+    border: 0;
+}
+
+#contact_form label {
+    display: block;
+    margin-bottom: 2px;
+}
+
+#contact_form button {
+    width: 100%;
+    display: block;
+    padding: 16px 30px;
+    line-height: 1;
+    font-size: 1.125rem;
+    color: #ff4200;
+    border: 1px solid #ff4200;
+    background-color: #ff4200;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#contact_form input, #contact_form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #cdcdcd;
+    font-size: inherit;
+}
+
+.contact-hint {
+    margin: 12px auto;
+}
+
+#footer {
+    position: relative;
+    margin: 20px auto 8px auto;
+    text-align: center;
+}
+
+#footer ul {
+    width: 100%;
+    margin: 8px 0 8px 0;
+}
+
+#footer li {
+    display: inline;
+    list-style: none;
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0 20px 0 20px;
+}
+
+#footer a {
+    text-decoration: none !important;
+}
+
+.bdadam {
+    color: #f00;
+    text-decoration: underline;
+}
+
+.webdev {
+    color: #666;
+    text-decoration: none;
+}
